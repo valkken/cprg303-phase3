@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pause - Mahjinx</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .pause-container {
+      background-color: #ffffff;
+      width: 270px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      padding: 25px 30px;
+      text-align: center;
+    }
+
+    .pause-header {
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    .pause-logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 25px;
+    }
+
+    .pause-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .pause-button {
+      background-color: #1e3a8a;
+      color: white;
+      border: none;
+      padding: 12px 0;
+      border-radius: 25px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .pause-button:hover {
+      background-color: #1e40af;
+    }
+
+    .pause-button.quit {
+      background-color: #333;
+    }
+
+    .pause-button.quit:hover {
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="pause-container">
+    <div class="pause-header">Paused</div>
+    <img src="/images/image.png" alt="Game Logo" class="pause-logo" />
+
+    <div class="pause-buttons">
+      <button class="pause-button" onclick="window.location.href='game.html'">Resume</button>
+      <button class="pause-button quit" onclick="window.location.href='index.html'">Quit</button>
+    </div>
+  </div>
+</body>
+</html>
